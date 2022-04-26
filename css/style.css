@@ -11,7 +11,7 @@
       --bg-color: #472910;
       --font-color: #ffffff;
       --btn-bg-color: #ffffff;
-      --accent-color: #be7efe;
+      --accent-color: #145806;
       --header-shadow: #000 0px 0px 5px;
     }
 
@@ -41,8 +41,8 @@
 
     .teste {
       display: flex;
-      flex-direction: column;
-      max-width: 960px;
+      flex-direction: left;
+      max-width: 1260px;
       margin: 0 auto;
       padding: 1rem 2rem;
     }
@@ -58,11 +58,6 @@
       align-items: center;
     }
 
-    header .teste {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
     .menu {
       display: flex;
       gap: 2rem;
