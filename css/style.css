@@ -58,6 +58,12 @@
       align-items: center;
     }
 
+    header .teste {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: left;
+    }
+
     .menu {
       display: flex;
       gap: 2rem;
@@ -113,6 +119,14 @@
       height: 100%;
     }
 
+    .teste {
+      display: flex;
+      flex-direction: left;
+      justify-content: left;
+      align-items: left;
+      height: 100%;
+    }
+
     .countdown ul {
       display: flex;
       gap: 2rem
@@ -155,13 +169,6 @@
       font-size: 3.5rem;
       text-align: center;
     }
-    .countdown h2 {
-      text-shadow: 2px 2px 0 var(--accent-color);
-      font-style: italic;
-      margin: 3rem 0;
-      font-size: 3.5rem;
-      text-align: end;
-    }
 
     .countdown p {
       font-size: 1.1rem;
@@ -170,11 +177,28 @@
       text-align: center;
     }
 
+    section {
+      flex: 1 1 auto;
+    } 
+    
+    .teste h2 {
+      text-shadow: 2px 2px 0 var(--accent-color);
+      font-style: italic;
+      margin: 3rem 0;
+      font-size: 3.5rem;
+      text-align: end;
+    }}
+
     /* OWNER STYLES */
 
     .owner-status {
       font-size: 2rem;
       text-align: center;
+    }
+
+    .teste-status {
+      font-size: 2rem;
+      text-align: left;
     }
 
     /* MEDIA QUERIES */
@@ -191,7 +215,7 @@
       .countdown h1 {
         font-size: 2rem;
       }
-      .countdown h2 {
+      .teste h2 {
         font-size: 2rem;
       }
       .countdown p {
