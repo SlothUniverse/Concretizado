@@ -42,7 +42,7 @@
     .teste {
       display: flex;
       flex-direction: left;
-      max-width: 1260px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 1rem 2rem;
     }
@@ -155,7 +155,7 @@
       font-size: 3.5rem;
       text-align: center;
     }
-    .countdown h2 {
+    .teste h2 {
       text-shadow: 2px 2px 0 var(--accent-color);
       font-style: italic;
       margin: 3rem 0;
@@ -191,8 +191,8 @@
       .countdown h1 {
         font-size: 2rem;
       }
-      .countdown h2 {
-        font-size: 3rem;
+      .teste h2 {
+        font-size: 2rem;
       }
       .countdown p {
         font-size: 1rem;
