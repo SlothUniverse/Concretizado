@@ -41,8 +41,8 @@
 
     .teste {
       display: flex;
-      flex-direction: left;
-      max-width: 1260px;
+      flex-direction: column;
+      max-width: 960px;
       margin: 0 auto;
       padding: 1rem 2rem;
     }
@@ -58,6 +58,11 @@
       align-items: center;
     }
 
+    header .teste {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
     .menu {
       display: flex;
       gap: 2rem;
