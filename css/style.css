@@ -155,6 +155,13 @@
       font-size: 3.5rem;
       text-align: center;
     }
+    .countdown h2 {
+      text-shadow: 2px 2px 0 var(--accent-color);
+      font-style: italic;
+      margin: 2rem 0;
+      font-size: 3.5rem;
+      text-align: left;
+    }
 
     .countdown p {
       font-size: 1.1rem;
@@ -182,6 +189,9 @@
         max-width: 8rem;
       }
       .countdown h1 {
+        font-size: 2rem;
+      }
+      .countdown h2 {
         font-size: 2rem;
       }
       .countdown p {
