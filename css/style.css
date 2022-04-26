@@ -39,6 +39,13 @@
       padding: 1rem 2rem;
     }
 
+    .teste {
+      display: flex;
+      flex-direction: left;
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+    }
     /* HEADER */
 
     header {
