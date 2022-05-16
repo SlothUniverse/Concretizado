@@ -1,298 +1,331 @@
-    /* FONTS */
+      /* FONTS */
 
-    @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-    /* GLOBAL STYLES */
+      /* GLOBAL STYLES */
 
-    :root {
-      --font-primary: 'Poppins', sans-serif;
-      --font-secondary: 'Arvo', serif;
-      --font-code: 'Roboto', monospace;
-      --bg-color: #000000f8;
-      --font-color: #fafafa;
-      --btn-bg-color: #ffffff;
-      --accent-color: #8c00ff9d;
-      --header-shadow: #000 0px 0px 5px;
-    }
+      :root {
+        --font-primary: 'Poppins', sans-serif;
+        --font-secondary: 'Arvo', serif;
+        --font-code: 'Roboto', monospace;
+        --bg-color: #000000f8;
+        --font-color: #fafafa;
+        --btn-bg-color: #ffffff;
+        --accent-color: #8c00ff9d;
+        --header-shadow: #000 0px 0px 5px;
+        --newcdl-color: #ffffff;
+        --newcolor: #8c00ffef;
+        --newcdls-color: rgba(0, 0, 0, 0.479);
+        --newcolor2: #0cb832;
+      }
 
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-      background-color: var(--bg-color);
+      body {
+        background-color: var(--bg-color);
+        display: flex;
+        flex-flow: column ;
+        height: 100vh;
+        color: var(--font-color);
+        font-family: var(--font-primary);
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+        margin: auto;
+        padding: 1rem 2rem;
+      }
+
+      .newcols {
+        display: inline;
+        flex-direction: row;
+        max-width: 1800px;
+        margin: auto;
+        padding: 2rem 7rem;
+      }
+      .newcol {
+        display: inline;
+        flex-direction: row;
+        max-width: 1800px;
+        margin: auto;
+        padding: -50rem 7rem;
+      }
+
+      .newcol2 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1980px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        flex: 0 0 auto;
+        max-width: 100%;
+      } 
+      .newcol3 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1980px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        flex: 0 0 auto;
+        max-width: 100%;
+      } 
+      .uniq {
       display: flex;
-      flex-flow: column;
-      height: 100vh;
-      color: var(--font-color);
-      font-family: var(--font-primary);
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      max-width: 960px;
-      margin: auto;
-      padding: 1rem 2rem;
-    }
-
-    .teste {
-      display: flex;
-      flex-direction: row;
-      max-width: 960px;
-      margin: auto;
-      padding: 1rem 2rem;
-    }
-
-    .teste2 {
-      display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
       max-width: 1980px;
       margin: 0 auto;
       padding: 1rem 2rem;
-    } 
-    /* HEADER */
+      flex: 0 0 auto;
+      max-width: 100%;
+      } 
+       /* HEADER */
 
-    header {
-      box-shadow: var(--header-shadow);
-    }
-
-    header .container {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header .teste {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: left;
-    }
-
-    .menu {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    /* BUTTONS */
-
-    div#rodape{
-      height: 200px;
-      position: absolute; top: 1900px; left: 1100px; bottom: 0px font-size: x-small;
-      width: 150%;
-      padding: 0px;
-      margin: 0px 0px 0px 0px;
-      position: absolute;
-      top: 800px;
-      right: 0px;
-      bottom: 10px;
-  }
-
-    .btn {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background: var(--btn-bg-color);
-      color: var(--accent-color);
-      font-family: var(--font-secondary);
-      font-style: italic;
-      font-weight: bold;
-      font-size: 1rem;
-      text-transform: capitalize;
-      transition: all 0.3s ease;
-      box-shadow: 4px 4px 0 0 var(--accent-color);
-      cursor: pointer;
-      position: relative;
-      text-decoration: none;
-      outline: none;
-    }
-    .btn:hover {
-      box-shadow: none;
-    }
-
-    .wallet-btn {
-      border-radius: 5rem;
-      margin-left: 2rem;
-      border-color: transparent;
-    }
-
-    .hero-btn {
-      border-radius: 4px;
-      font-size: 1.2rem;
-      padding: 1.5rem 3rem;
-    }
-
-    /* COUNTDOWN SECTION */
-
-    section {
-      flex: 1 1 auto;
-    }
-
-    .countdown {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-
-    .teste h2{
-      display: flex;
-      flex-direction: left;
-      justify-content: left;
-      align-items: left;
-      height: 100%;
-    }
-
-    .countdown ul {
-      display: flex;
-      gap: 2rem
-    }
-    .countdown .clock-item {
-      list-style: none;
-      width: 70px;
-      height: auto;
-    }
-    .countdown .clock-item .count-number {
-      background: var(--accent-color);
-      color: var(--font-color);
-      font-size: 2rem;
-      font-weight: 700;
-      font-family: var(--font-secondary);
-      padding: 1rem;
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-      line-height: 1;
-      border-radius: 4px 4px 0 0;
-    }
-    .countdown .clock-item .count-text {
-      background: var(--btn-bg-color);
-      font-family: var(--font-secondary);
-      font-size: 1.1rem;
-      color: var(--bg-color);
-      padding: 0.5rem 0.7rem;
-      display: inline-block;
-      width: 100%;  
-      text-align: center;
-      line-height: 1;
-      border-radius: 0 0 4px 4px;
-    }
-
-    .countdown h1 {
-      text-shadow: 2px 2px 0 var(--accent-color);
-      font-style: italic;
-      margin: 1rem 0;
-      font-size: 3.5rem;
-      text-align: center;
-    }
-
-    .countdown p {
-      font-size: 1.1rem;
-      font-family: var(--font-secondary);
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    section {
-      flex: 1 1 auto;
-    } 
-    
-    .teste h2 {
-      text-shadow: 2px 2px 0 var(--accent-color);
-      font-style: italic;
-      margin: -1rem 0;
-      font-size: 3rem;
-      text-align: end;
-    }
-
-    #
-
-    /* OWNER STYLES */
-
-    .owner-status {
-      font-size: 2rem;
-      text-align: center;
-    }
-
-    #oife{
-    width: 100px;
-    height: 10px;
-    float: center;
-    }
-
-    #oife{
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-    #vitoria{
-      width: 100px;
-      height: 10px;
-      float: left;
+      header {
+        box-shadow: var(--header-shadow);
       }
 
-      #vitoria{
+      header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu {
         display: flex;
-        flex-direction: center;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      /* BUTTONS */
+
+      div#rodape{
+        height: 200px;
+        position: absolute; top: 1900px; left: 1100px; bottom: 0px font-size: x-small;
+        width: 150%;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        position: absolute;
+        top: 800px;
+        right: 0px;
+        bottom: 10px;
+    }
+
+      .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: var(--btn-bg-color);
+        color: var(--accent-color);
+        font-family: var(--font-secondary);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: capitalize;
+        transition: all 0.3s ease;
+        box-shadow: 4px 4px 0 0 var(--accent-color);
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        outline: none;
+      }
+      .btn:hover {
+        box-shadow: none;
+      }
+
+      .wallet-btn {
+        border-radius: 5rem;
+        margin-left: 2rem;
+        border-color: transparent;
+      }
+
+      .hero-btn {
+        border-radius: 4px;
+        font-size: 1.2rem;
+        padding: 1.5rem 3rem;
+      }
+
+      /* COUNTDOWN SECTION */
+
+      section {
+        flex: 1 1 auto;
+      }
+
+      .countdown {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100%;
       }
-      #rafael{
-        width: 100px;
-        height: 10px;
-        float: left;
-        }
-        #rafael{
-          display: flex;
-          flex-direction: center;
-          justify-content: center;
-          align-items: center;
-          height: 100%;
-        }
-        #informetionkk{
-          width: 100px;
-          height: 100px;
-          float: center;
-          }
-          #informetionkk{
-            display: contents;
-            flex-direction: center;
-            justify-content: center;
-            align-items: flex-end;
-            margin-bottom: auto;
-            height: 500%;
-          }
-    }
-    .teste-status {
-      font-size: 2rem;
-      text-align: left;
-    }
 
-    /* MEDIA QUERIES */
-
-    @media screen and (max-width: 768px) {
-      .menu {
-        gap: 1rem;
+      .newcol h2{
+        display: flex;
+        flex-direction: left;
+        justify-content: left;
+        align-items: left;
+        height: 100%;
       }
-      .wallet-btn {
-        margin-left: 0;
+
+      .newcol h3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .newcol h4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .newcol h5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .countdown ul {
+        display: flex;
+        gap: 2rem
+      }
+      .countdown .clock-item {
+        list-style: none;
+        width: 70px;
+        height: auto;
+      }
+      .countdown .clock-item .count-number {
+        background: var(--accent-color);
+        color: var(--font-color);
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: var(--font-secondary);
         padding: 1rem;
-        max-width: 8rem;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+        border-radius: 4px 4px 0 0;
       }
+      .countdown .clock-item .count-text {
+        background: var(--btn-bg-color);
+        font-family: var(--font-secondary);
+        font-size: 1.1rem;
+        color: var(--bg-color);
+        padding: 0.5rem 0.7rem;
+        display: inline-block;
+        width: 100%;  
+        text-align: center;
+        line-height: 1;
+        border-radius: 0 0 4px 4px;
+      }
+
       .countdown h1 {
-        font-size: 2rem;
+        text-shadow: 2px 2px 0 var(--accent-color);
+        font-style: italic;
+        margin: 1rem 0;
+        font-size: 3.5rem;
+        text-align: center;
       }
-      .teste h2 {
-        font-size: 2rem;
-      }
+
       .countdown p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        font-family: var(--font-secondary);
+        margin-bottom: 1rem;
+        text-align: center;
       }
-    }
-  
+
+      section {
+        flex: 1 1 auto;
+      } 
+      
+      .newcol h2 {
+        text-shadow: 2px 2px 0 var(--accent-color);
+        font-style: oblique;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      .newcol h3 {
+        text-shadow: 2px 2px 0 var(--newcdl-color);
+        color: var(--newcolor);
+        font-style: oblique;
+        margin: 1rem 0;
+        font-size: 4.5rem;
+        text-align: center;
+      }
+      .newcol h4 {
+        text-shadow: 1px 1px 0 var(--newcdl-color);
+        color: var(--newcolor);
+        font-style: oblique;
+        margin: -1rem 0;
+        font-size: 1.7rem;
+        text-align: center;
+      }
+      .newcol h5 {
+        text-shadow: 4.5px 4.5px 0 var(--newcdls-color);
+        color: var(--newcolor2);
+        font-style: oblique;
+        margin: -5rem 0;
+        font-size: 4.5rem;
+        text-align: center;
+      }
+      #
+
+      /* OWNER STYLES */
+
+      .owner-status {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .newcols-status {
+        font-size: 2rem;
+        text-align: left;
+      }
+      .newcol3-status {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .newcol-status {
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      /* MEDIA QUERIES */
+
+      @media screen and (max-width: 768px) {
+        .menu {
+          gap: 1rem;
+        }
+        .wallet-btn {
+          margin-left: 0;
+          padding: 1rem;
+          max-width: 8rem;
+        }
+        .countdown h1 {
+          font-size: 2rem;
+        }
+        .newcol h2 {
+          font-size: 2rem;
+        }
+        .newcol h3 {
+          font-size: 2rem;
+        }
+        .newcol h4 {
+          font-size: 2rem;
+        }
+        .newcol h5 {
+          font-size: 2rem;
+        }
+        .countdown p {
+          font-size: 1rem;
+        }
+      }
+    
